@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>TheMarket</td>
+            <td>20 Jun 2022, 17:31</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">Hooks.tc2(Scenario)</td>
+              <td>7</td>
+              <td class="duration" data-value="759467057">0.759</td>
+              <td class="duration" data-value="759467057">1.278</td>
+              <td class="duration" data-value="5316269400">5.316</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.tcs1()</td>
+              <td>7</td>
+              <td class="duration" data-value="23997021671">23.997</td>
+              <td class="duration" data-value="23997021671">27.916</td>
+              <td class="duration" data-value="167979151700">2:47.979</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_add_the_item_to_the_cart_and_place_a_order()</td>
+              <td>1</td>
+              <td class="duration" data-value="2973031800">2.973</td>
+              <td class="duration" data-value="2973031800">2.973</td>
+              <td class="duration" data-value="2973031800">2.973</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_add_the_item_to_the_cart_and_place_a_order_and_print()</td>
+              <td>1</td>
+              <td class="duration" data-value="21094738900">21.094</td>
+              <td class="duration" data-value="21094738900">21.094</td>
+              <td class="duration" data-value="21094738900">21.094</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_enter_the_emailID_and_submit(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="502129800">0.502</td>
+              <td class="duration" data-value="502129800">0.502</td>
+              <td class="duration" data-value="502129800">0.502</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_navigate_to_the_home_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="303042600">0.303</td>
+              <td class="duration" data-value="303042600">0.303</td>
+              <td class="duration" data-value="303042600">0.303</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_navigate_to_the_incorrect_login_page()</td>
+              <td>2</td>
+              <td class="duration" data-value="308828900">0.308</td>
+              <td class="duration" data-value="308828900">0.327</td>
+              <td class="duration" data-value="617657800">0.617</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_should_check_search_box_by_searching_the_item()</td>
+              <td>1</td>
+              <td class="duration" data-value="406167100">0.406</td>
+              <td class="duration" data-value="406167100">0.406</td>
+              <td class="duration" data-value="406167100">0.406</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_should_click_login_button()</td>
+              <td>3</td>
+              <td class="duration" data-value="118287766">0.118</td>
+              <td class="duration" data-value="118287766">0.204</td>
+              <td class="duration" data-value="354863300">0.354</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_should_click_login_button_and_click_forgotpassword_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="6832117300">6.832</td>
+              <td class="duration" data-value="6832117300">6.832</td>
+              <td class="duration" data-value="6832117300">6.832</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_should_launch_the_chrome_browser_and_load_the_url()</td>
+              <td>7</td>
+              <td class="duration" data-value="1484814">0.001</td>
+              <td class="duration" data-value="1484814">0.002</td>
+              <td class="duration" data-value="10393700">0.010</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_should_search_the_item_and_select_the_item()</td>
+              <td>2</td>
+              <td class="duration" data-value="1155314900">1.155</td>
+              <td class="duration" data-value="1155314900">1.366</td>
+              <td class="duration" data-value="2310629800">2.310</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_should_select_the_item_and_add_to_the_cart()</td>
+              <td>1</td>
+              <td class="duration" data-value="1460050900">1.460</td>
+              <td class="duration" data-value="1460050900">1.460</td>
+              <td class="duration" data-value="1460050900">1.460</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_should_type_invalid_username_and_invalid_password(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="745109000">0.745</td>
+              <td class="duration" data-value="745109000">0.745</td>
+              <td class="duration" data-value="745109000">0.745</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_should_type_invalid_username_and_valid_password(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="750772500">0.750</td>
+              <td class="duration" data-value="750772500">0.750</td>
+              <td class="duration" data-value="750772500">0.750</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginDefinition.user_should_type_valid_username_and_valid_password(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="552102400">0.552</td>
+              <td class="duration" data-value="552102400">0.552</td>
+              <td class="duration" data-value="552102400">0.552</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>16</td>
+            <td>38</td>
+            <td class="duration">5.584</td>
+            <td class="duration">2:47.979</td>
+            <td class="duration">3:32.208</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

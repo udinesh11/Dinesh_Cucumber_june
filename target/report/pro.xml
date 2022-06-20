@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="212.297129">
+<testcase classname="To check forgotpassword link" name="To check the functionality of forgotpassword link" time="16.936713">
+<system-out><![CDATA[Given user should launch the chrome browser and load the url................passed
+When user should click login button and click forgotpassword button.........passed
+Then user enter the emailID and submit......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality" name="To validate the login functionality with valid username and password" time="28.794924">
+<system-out><![CDATA[Given user should launch the chrome browser and load the url................passed
+When user should type valid username and valid password.....................passed
+And user should click login button..........................................passed
+Then user navigate to the home page.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality" name="To validate the login functionality with Invalid username and valid password" time="27.345854">
+<system-out><![CDATA[Given user should launch the chrome browser and load the url................passed
+When user should type invalid username and valid password...................passed
+And user should click login button..........................................passed
+Then user navigate to the incorrect login page..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality" name="To validate the login functionality with Invalid username and invalid password" time="27.2749">
+<system-out><![CDATA[Given user should launch the chrome browser and load the url................passed
+When user should type invalid username and invalid password.................passed
+And user should click login button..........................................passed
+Then user navigate to the incorrect login page..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the search box" name="To check the fuctionality of search box" time="30.432382">
+<system-out><![CDATA[Given user should launch the chrome browser and load the url................passed
+When User should check search box by searching the item.....................passed
+Then User should select the item and add to the cart........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the search box" name="To check the fuctionality of search box and order the item" time="31.975334">
+<system-out><![CDATA[Given user should launch the chrome browser and load the url................passed
+When User should search the item and select the item........................passed
+Then User add the item to the cart and place a order........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the search box" name="To check the fuctionality of search box and order the item 2" time="49.537022">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id='13854127']&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-5N812QCK', ip: '192.168.173.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.27 (df4a85108ffa..., userDataDir: C:\Users\Dinesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b39587823b74c4575bde48c1fc83620e&#10;*** Element info: {Using=xpath, value=//a[@id='13854127']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy18.click(Unknown Source)&#13;&#10;&#9;at org.utilities.BaseClass.btnclic(BaseClass.java:60)&#13;&#10;&#9;at org.stepdefinition.LoginDefinition.user_add_the_item_to_the_cart_and_place_a_order_and_print(LoginDefinition.java:156)&#13;&#10;&#9;at ✽.User add the item to the cart and place a order and print(file:src/test/resources/Feature%20Files/Search.feature:18)&#13;&#10;"><![CDATA[Given user should launch the chrome browser and load the url................passed
+When User should search the item and select the item........................passed
+Then User add the item to the cart and place a order and print..............failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='13854127']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-5N812QCK', ip: '192.168.173.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.27 (df4a85108ffa..., userDataDir: C:\Users\Dinesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b39587823b74c4575bde48c1fc83620e
+*** Element info: {Using=xpath, value=//a[@id='13854127']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at org.utilities.BaseClass.btnclic(BaseClass.java:60)
+	at org.stepdefinition.LoginDefinition.user_add_the_item_to_the_cart_and_place_a_order_and_print(LoginDefinition.java:156)
+	at ✽.User add the item to the cart and place a order and print(file:src/test/resources/Feature%20Files/Search.feature:18)
+]]></failure>
+</testcase>
+</testsuite>
